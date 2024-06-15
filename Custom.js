@@ -4,5 +4,5 @@ document.getElementById("Light").addEventListener("click", function () {
 });
 // Theme dark mode
 document.getElementById("Dark").addEventListener("click", function () {
-  document.body.style.backgroundColor = "#000000";
+  document.body.style.backgroundColor = "#201F2E";
 });

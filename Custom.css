@@ -1,13 +1,29 @@
 body {
-  padding-top: 72px;
+  padding-top: 62px;
 }
+/* The Header */
+
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
+  height: fit-content;
   z-index: 1000;
+  padding: 15px;
+  border-bottom: 1px solid #343a40;
+}
+.nav-link {
+  color: #343a40;
+  font-size: medium;
+  font-weight: bold;
 }
 
-.nav-link {
-  color: #ffffff;
+/* The Main */
+.container-1 {
+  color: #343a40;
+  margin-top: 120px;
+}
+
+.container-1 .row .col-12 {
+  height: 40vh;
 }
