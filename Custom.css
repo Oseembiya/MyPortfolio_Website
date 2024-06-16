@@ -13,11 +13,30 @@ body {
   border-bottom: 1px solid #343a40;
 }
 .nav-link {
+  position: relative;
+  transition: color 0.3s;
   color: #343a40;
   font-size: medium;
   font-weight: bold;
 }
 
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #343a40;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+  background: #343a40;
+}
 /* The Main */
 .container-1 {
   color: #343a40;
@@ -25,5 +44,10 @@ body {
 }
 
 .container-1 .row .col-12 {
+  height: 40vh;
+}
+
+/* The footer */
+.footer {
   height: 40vh;
 }
